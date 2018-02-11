@@ -10,30 +10,25 @@ from scipy.sparse import csc_matrix
 from scipy.sparse import save_npz
 
 from scipy.sparse import load_npz
+
+from Bio import SeqIO
 startTime = datetime.now()
 
+#-----------------------------GET SEQUENCES FROM FASTA FILE-----------------------
+seqList = []
 
-string1 = """SGSWLRDVWDWICTVLTDFKTWLQSKLLPRLPGVPFLSCQRGYKGVWRGDGIMQTTCPCGAQIAGHVKNGSMRIVGPKTC
-SNTWHGTFPINAYTTGPCVPSPAPNYSKALWRVAAEEYVEVTRVGDFHYVTGMTTDNIKCPCQVPAPEFFTEVDGVRLHR
-YAPACKPLLREEVTFQVGLNQYLVGSQLPCEPEPDVTVLTSMLSDPSHITAETAKRRLARGSPPSLASSSASQLSAPSLK
-ATCTTHHDSPDADLIEANLLWRQEMGGNITRVESENKVVILDSFDPLRAEEGEREISVPAEILRKTRKFPPAMPIWARPD
-YNPPLIESWKHPDYVPPVVHGCPLPATKAPPIPPPRRKRTVVLTESTVSSALAELATKTFGSSESSAVDSGTATAPLDQP
-SDAGDTGSDVESYSSMPPLEGEPGDPDLSDGSWSTVSEEASEDVVCC"""
+inputfileList = ('..//inputfile//HCV_nonlabel.fasta','..//inputfile//HCV_label.fasta', '..//inputfile//sequence.txt')
+for fileName in inputfileList:
+    inFile = open(fileName,'r')
+    
+    for record in SeqIO.parse(inFile,'fasta'):
+        seqList.append( ''.join(char for char in str(record.seq) if char.isalpha()))
+        
 
-string2 = """SGSWLRDVWDWICTVLTDFKTWLQSKLLPRLPGVPFLSCQRGYKGVWRGDGIMQTTCPCGAQIAGHVKNGSMRIVGPKTC
-SNTWHGTFPINAYTTGPCVPSPAPNYSKALWRVAAEEYVEVTRVGDFHYVTGMTTDNIKCPCQVPAPEFFTEVDGVRLHR
-YAPACKPLLREEVTFQVGLNQYLVGSQLPCEPEPDVTVLTSMLSDPSHITAETAKRRLARGSPPSLASSSASQLSAPSLK
-ATCTTHHDSPDADLIEANLLWRQEMGGNITRVESENKVVILDSFDPLRAEEGEREISVPAEILRKTRKFPPAMPIWARPD
-YNPPLIESWKHPDYVPPVVHGCPLPATKAPPIPPPRRKRTVVLTESTVSSALAELATKTFGSSESSAVDSGTATAPLDQP
-PDAGDTGSDVESYSSMPPLEGEPGDPDLSDGSWSTVSEEASEDVVCC"""
-
-string4 = "1234512"
-string3 = "abcdeab"
-
-string5 = "abcdeabc"
-seqList = [string1, string2, string3, string4, string5]
+print datetime.now() - startTime #khoảng 13-14 giây
 
 
+#------------------------------ENCODING-------------------------------------
 sizeOfSubstr = (1,2,3)
 numOfSeq = len(seqList)
 listSubString = [] #list of substrings or list of feature
@@ -71,14 +66,14 @@ np.save('output1',encodingMat)
 readMat1 = np.load('output1.npy')
 
 
-#save sparse Mat to .npz file by scipy.sparse lib
-sparseMat = csc_matrix(encodingMat)
-save_npz('output', sparseMat)
+##save sparse Mat to .npz file by scipy.sparse lib
+#sparseMat = csc_matrix(encodingMat)
+#save_npz('output', sparseMat)
+#
+#
+#readMat = load_npz('output.npz')
+#readMat = readMat.todense()
 
 
-readMat = load_npz('output.npz')
-readMat = readMat.todense()
 
-
-
-print datetime.now() - startTime
+print datetime.now() - startTime #khoảng
