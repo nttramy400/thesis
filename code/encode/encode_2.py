@@ -35,6 +35,14 @@ for sizeOfSub in sizeOfSubstr:
 
 print datetime.now() - startTime #khoang 2 phut
 
+subStrFile = open('substring.txt', 'w')
+
+for substr in setSubString:
+    subStrFile.write("%s\n" % substr)
+    
+subStrFile.flush()
+subStrFile.close()
+
 #-------------------------BUILD MATRIX AND SAVE TO HDF5 FILES--------------------------
 
 sizeOfSeqList =  len(seqList)
@@ -57,4 +65,4 @@ for feature in setSubString:
 fileh.flush()
 fileh.close()
 
-print datetime.now() - startTime #khoang 23 phut
+print datetime.now() - startTime 
