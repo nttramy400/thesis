@@ -51,6 +51,7 @@ fileh = tables.open_file("relationalMat.h5", mode="w")
 
 # Lay root cua group
 root = fileh.root
+count = 0
 for feature in setSubString:
     a = np.zeros((sizeOfSeqList,), np.uint16)
     
@@ -60,9 +61,11 @@ for feature in setSubString:
     
     # luu array vao HDF5 file
     hdfarray = fileh.create_array(root, feature, a, feature)
+    count+=1
+    print (count)
     print datetime.now() - startTime
 
 fileh.flush()
 fileh.close()
 
-print datetime.now() - startTime 
+print datetime.now() - startTime #khoang 6 tieng 50 phut
