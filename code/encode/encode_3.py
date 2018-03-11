@@ -1,27 +1,19 @@
-#######################################################
-from datetime import datetime
-
-from Bio import SeqIO
 import numpy as np
 import tables
 
 startTime = datetime.now()
 
-#-----------------------------GET SEQUENCES FROM FASTA FILE-----------------------
-#seqList = []
-#
-#inputfileList = ('..//inputfile//HCV_nonlabel.fasta','..//inputfile//HCV_label.fasta', '..//inputfile//sequence.txt')
-#for fileName in inputfileList:
-#    inFile = open(fileName,'r')
-#    
-#    for record in SeqIO.parse(inFile,'fasta'):
-#        seqList.append( ''.join(char for char in str(record.seq) if char.isalpha()))
-#    inFile.close()
-#        
-#
-#print datetime.now() - startTime #khoang 13-14s
+#-----------------------------GET SEQUENCES FROM INFO FILE-----------------------
+infoFile = tables.open_file('..//outputfile//info.h5',mode = 'r')
+seqList = infoFile.root.sequences.read()
+infoFile.close()
 
 #----------------------------GET SET SUBSTRING---------------------------------------
+fileh = tables.open_file("..//outputfile//encodingFile.h5", mode="w")
+# Lay root cua file
+root = fileh.root
+
+#seqList = ['abc', 'abca']
 sizeOfSubstr = range(2,20)
 
 setSubString = set()
@@ -32,29 +24,23 @@ for sizeOfSub in sizeOfSubstr:
         for index in xrange(0,sizeOfSeq-sizeOfSub+1): 
             setSubString.add(seq[index: index+sizeOfSub])
 
+listSubStr = list(setSubString)
+#save features to file
+fileh.create_array(root, 'feature', listSubStr, 'feature')
+fileh.create_array(root, 'nOfNgram', sizeOfSubstr, 'nOfNgram')
+
 print datetime.now() - startTime #khoang 2 phut
-
-subStrFile = open('substring.txt', 'w')
-
-for substr in setSubString:
-    subStrFile.write("%s\n" % substr)
-    
-subStrFile.flush()
-subStrFile.close()
 
 #-------------------------BUILD MATRIX AND SAVE TO HDF5 FILES--------------------------
 
 sizeOfSeqList =  len(seqList)
-# Mo 1 empty HDF5 file moi
-fileh = tables.open_file("relationalMat.h5", mode="w")
 
-# Lay root cua group
-root = fileh.root
 atom = tables.Int16Atom()
 # Use ``a`` as the object type for the enlargeable array.
-matrix = fileh.create_earray(fileh.root, 'matrix', atom, (0,sizeOfSeqList),"FeatureRows")
+featureRowMatrix = fileh.create_earray(root, 'featureRowMatrix', atom, (0,sizeOfSeqList),"featureRowMatrix")
+seqRowMatrix = fileh.create_earray(root, 'seqRowMatrix', atom, (sizeOfSeqList,0),"seqRowMatrix")
 count = 0
-listSubStr = list(setSubString)
+
 for feature in listSubStr:
     a = np.zeros((sizeOfSeqList,), np.uint16)
     
@@ -63,7 +49,8 @@ for feature in listSubStr:
         a[indexOfSeq] = seqList[indexOfSeq].count(feature)
     
     # luu array vao HDF5 file
-    matrix.append([a])
+    featureRowMatrix.append([a])
+    seqRowMatrix.append(a.reshape(sizeOfSeqList,1))
     count+=1
     print (count)
     print datetime.now() - startTime
@@ -71,4 +58,4 @@ for feature in listSubStr:
 fileh.flush()
 fileh.close()
 
-print datetime.now() - startTime #khoang 6 tieng  ch6 7309 seqs lấy size feature = 2-->19 (3373908 features)
+print datetime.now() - startTime #khoang 6h10'  cho 7309 seqs lấy size feature = 2-->19 (3373908 features)

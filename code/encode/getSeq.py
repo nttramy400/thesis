@@ -1,5 +1,6 @@
 from datetime import datetime  
 from Bio import SeqIO
+import tables
 startTime = datetime.now()
 #---------------------------- GET SEQUENCES FROM FILES -----------------------
 #################### KHONG NHAN
@@ -18,9 +19,9 @@ inFile.close()
 #################### CO NHAN
 #********Tu file fasta LANL
 #co 2 class la sustained_response, non-response
-labelClass = {"sustained-response":["sustained_response", "SVR"],
-              "non-response":["non-response", "relapse", "Null"]}
-seqClass = {"sustained-response":[], "non-response":[]} #luu index cua sequence tung loai
+labelClass = {"sustained_response":["sustained_response", "SVR"],
+              "non_response":["non-response", "relapse", "Null"]}
+seqClass = {"sustained_response":[], "non_response":[]} #luu index cua sequence tung loai
 
 def getLabelRecord(record):
     return str(record.description).split('.')[1] # 1 la vi tri cua nhan trong phan description cua file fasta
@@ -71,7 +72,7 @@ def addLabelSeqChiba(label, seq):
     seqClass[getClass(label)].append(len(label_seqs)) # them index cua chuoi vao dung class
     label_seqs.append(seq)
 
-with open('D:\git_thesis\code\inputfile\chiba_label.txt') as f:
+with open('..//inputfile//chiba_label.txt') as f:
     for label,seq in itertools.izip_longest(*[f]*2):
         label = label.rstrip()
         seq = seq.rstrip()
@@ -89,33 +90,16 @@ print datetime.now() - startTime
 
 
 #------------------------------------------------
-#
-##none_label_seqs =[]
-##inFile = open('..//inputfile//HCV_nonlabel.fasta','r')
-##
-#recordList = []
-#recordList1 = []
-##for record in SeqIO.parse(inFile,'fasta'):
-##    
-##    none_label_seqs.append( ''.join(char for char in str(record.seq) if char.isalpha()))
-#
-#
-#label_seqs =[]
-#inFile = open('..//inputfile//HCV_label.fasta','r')
-#aa = "abc"
-#for record in SeqIO.parse(inFile,'fasta'):  
-#    if not str(record.seq).isalpha():
-#       recordList.append(record)
-##       label_seqs.append( ''.join(char for char in str(record.seq) if char.isalpha()))
-#    if "AF033375" in str(record.description):
-#        recordList1.append(record)
-#        
-#        
-#        
-#
-##
-#thefile = open('test.txt', 'w')
-#thefile.writelines(["%s\n\n" % item  for item in recordList])
-#
-#inFile.close()
+#Save summary to file
+fileh = tables.open_file('..//outputfile//info.h5','w')
+root = fileh.root
+labelGroup = fileh.create_group(root, "label")
+
+for key in seqClass:
+    fileh.create_array(labelGroup, key, seqClass[key], key)
+
+fileh.create_array(root, 'sequences', seqList, 'sequences')
+
+fileh.flush()
+fileh.close()
 
