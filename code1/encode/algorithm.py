@@ -3,7 +3,7 @@ import tables
 from scipy.spatial.distance import cosine
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.neighbors import NearestNeighbors
-version = "5"
+version = "10"
 testVer = "1"
 ############################ READ INFO FROM FILE ############################
 def readFeatureRowMatFromFile(filename="..//outputfile//"+version+"//encodingFile.h5"):
@@ -69,15 +69,15 @@ def getLastIndexLabel(labelDict):
             lastIndex = maxIndex   
     return lastIndex
 
-def findKNN(seqVec, indexOfCurSeq, seqRowMat, kNumOfNeighbors):
-    sizeOfseqRowMat = len(seqRowMat)
-    distanceVec = np.zeros(sizeOfseqRowMat)
-    distanceVec = np.array([getDistanceVal(seqVec, seq) for seq in seqRowMat])
-    
-    sortedIndexList = np.argsort(distanceVec)
-    sortedIndexList = np.delete(sortedIndexList, indexOfCurSeq)
-    return sortedIndexList[:kNumOfNeighbors]
-    
+#def findKNN(seqVec, indexOfCurSeq, seqRowMat, kNumOfNeighbors):
+#    sizeOfseqRowMat = len(seqRowMat)
+#    distanceVec = np.zeros(sizeOfseqRowMat)
+#    distanceVec = np.array([getDistanceVal(seqVec, seq) for seq in seqRowMat])
+#    
+#    sortedIndexList = np.argsort(distanceVec)
+#    sortedIndexList = np.delete(sortedIndexList, indexOfCurSeq)
+#    return sortedIndexList[:kNumOfNeighbors]
+#    
 
 def buildWeightMat(seqRowMat, labelDict, kNumOfNeighbors):
     numOfSeq = len(seqRowMat)
@@ -90,7 +90,7 @@ def buildWeightMat(seqRowMat, labelDict, kNumOfNeighbors):
     for listIndexSeq in listIndexSeqs:
         sizeListOfCurLabel = len(listIndexSeq)
         for index1 in range(0,sizeListOfCurLabel):
-            for index2 in range(index1+1,sizeListOfCurLabel):
+            for index2 in range(index1,sizeListOfCurLabel):
                 weightMat[listIndexSeq[index1]][listIndexSeq[index2]] \
                 = weightMat[listIndexSeq[index2]][listIndexSeq[index1]] \
                 = getWeight(isclose=True, isLabeled=True)
@@ -224,7 +224,7 @@ if __name__ == '__main__':
     ##----------------------------------------------------------------------------------------
     
     
-    for kNumOfNeighbors in range(1,31):
+    for kNumOfNeighbors in range(1,200):
     
         seqRowMat = readSeqRowMatFromFile()
         labelDict = readLabelDictFromFile()

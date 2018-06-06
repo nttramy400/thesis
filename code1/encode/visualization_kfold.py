@@ -14,8 +14,8 @@ from sklearn.model_selection import KFold
 from sklearn.feature_selection import VarianceThreshold
 import matplotlib.pyplot as plt
 
-version = "3"
-testVer = "1"
+version = "7"
+testVer = "3"#2 hoac 3
 
 if __name__ == '__main__':
     startTime = datetime.now()
@@ -25,18 +25,21 @@ if __name__ == '__main__':
     labelDict = algFile.readLabelDictFromFile()
     labelVec = np.array(classifierFile.convertLabelDict2List(labelDict))
     numOfLabelData = len(labelVec)
-    kFeatures = range(1, 150)
+    kFeatures = range(1, 175)
     accuracyScoreList = []
     accuracyScoreList2 = []
     sumarizeAccuracy2 = []
     
     
     
-    kf = KFold(n_splits=20)
+    kf = KFold(n_splits=30)   
     #variance
     seqRowMatrixFull = algFile.readSeqRowMatFromFile() 
-    sel = VarianceThreshold(threshold=(.9 * (1 - .9)))
-    newSeqRowMatrix = sel.fit_transform(seqRowMatrixFull)
+    sel = VarianceThreshold()
+    sel.fit_transform(seqRowMatrixFull)
+    sortedIndexVarList = np.flipud(np.argsort(sel.variances_))
+    newFeatureRowMatrix = np.transpose(seqRowMatrixFull)[sortedIndexVarList]
+    newSeqRowMatrix = np.transpose(newFeatureRowMatrix)
     newSeqRowOfLabelData = newSeqRowMatrix[:numOfLabelData]
     
     #leave one out #variance 
@@ -55,7 +58,7 @@ if __name__ == '__main__':
         
         
         
-    for k_KNN_feature_selection in range(1,50):
+    for k_KNN_feature_selection in range(1,250):
         fileName = "..//outputfile//"+version+ "//"+testVer+"//knnGraph_"+str(k_KNN_feature_selection) + ".npy"
         sortedLaplaFeatureIndexes = algFile.loadSortedLaplaFeatureIndexes(fileName)
         sortedFeatureRowMat = np.array([featureRowMatrix[index] for index in sortedLaplaFeatureIndexes])

@@ -2,7 +2,7 @@ import numpy as np
 import tables
 from datetime import datetime
 startTime = datetime.now()
-version = "5"
+version = "10"
 #-----------------------------GET SEQUENCES FROM INFO FILE-----------------------
 infoFile = tables.open_file("..//outputfile//"+version+"//info.h5",mode = 'r')
 seqList = infoFile.root.sequences.read()
@@ -33,7 +33,7 @@ for sizeOfSub in sizeOfSubstr:
 #listSubStr = list(setSubString)
 #listSubStr = dictSubString.keys()
 #testFreq = filter(lambda key: (len(key)>10 and dictSubString[key] >10),dictSubString)  #so luong subSeq co len>10 va co freq>10
-listSubStr = filter(lambda key: dictSubString[key] > 0.75*len(seqList), dictSubString) #lay cac subSeq co tan so xuat hien > 10
+listSubStr = filter(lambda key: dictSubString[key] > 0.5*len(seqList), dictSubString) #lay cac subSeq co tan so xuat hien > 10
 
 
 print datetime.now() - startTime #khoang 2 phut
@@ -119,7 +119,7 @@ def getIndexOfLongestStrInListIndex(listIndexSubStr, listAllSubStr):
             retIndex = curIndexSubStr
     return retIndex
             
-
+#
 #lap list index cua cac feature duplicate can loai bo
 listDuplicateFeatureRowIndex =[]  
 for group in groupDuplicateFeatureRow:

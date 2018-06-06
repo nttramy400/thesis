@@ -1,12 +1,13 @@
 import tables
-version = "5"
+version = "8"
 def getListNonLabelSeq(filenameList = ["..//inputfile//unlabeled_data.txt"]):
     seqList = []
     for fname in filenameList:
         with open(fname) as f:
             content = f.readlines()
             seqList+=content
-    return list(set([x.strip() for x in seqList])) 
+    return [x.strip() for x in seqList] 
+#    return list(set([x.strip() for x in seqList])) 
 
   
 
@@ -20,9 +21,10 @@ def getInfoLabelSeq(filenameList = ["..//inputfile//labeled_data.txt"]):
                 seq, label = content.split()
                 
                 #check duplicate
-#                if False:
-                if ((label in indexOfLabelDataDict) and (seq in [seqList[index] for index in indexOfLabelDataDict[label]])): #bi duplicate (giong ca seq va nhan)
+                if False:
                     pass
+#                if ((label in indexOfLabelDataDict) and (seq in [seqList[index] for index in indexOfLabelDataDict[label]])): #bi duplicate (giong ca seq va nhan)
+#                    pass
                 else: #khong duplicate
                     #them sequence vao list
                     seqList.append(seq)

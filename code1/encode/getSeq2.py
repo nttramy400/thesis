@@ -1,7 +1,7 @@
 import itertools
 import tables
 
-version = "5"
+version = "10"
 def getNonResISDRSeq(nr_isdr_files, nr_isdr_seqs=[], prefixFile=""):
     for filename in nr_isdr_files:
         with open(prefixFile+filename) as f:
@@ -28,8 +28,8 @@ def getListNonLabelSeq(filenameList = ["..//inputfile//unlabeled_data.txt"]):
         with open(fname) as f:
             content = f.readlines()
             seqList+=content
-    return list(set([x.strip() for x in seqList])) 
-#    return [x.strip() for x in seqList] 
+#    return list(set([x.strip() for x in seqList])) 
+    return [x.strip() for x in seqList] 
 
 def saveInfoSeqToH5File(seqList,indexOfLabelDataDict, filename = "..//outputfile//"+version+"//info.h5"):
     fileh = tables.open_file(filename,'w')
@@ -45,9 +45,9 @@ def saveInfoSeqToH5File(seqList,indexOfLabelDataDict, filename = "..//outputfile
     fileh.close()
     
 def combineAllLabeledData(r_isdr_seqs, nr_isdr_seqs):
-    #neu can remove cac chuoi giong nhau trong cung 1 nhan
-    nr_isdr_seqs = list(set(nr_isdr_seqs))
-    r_isdr_seqs = list(set(r_isdr_seqs)) 
+#    #neu can remove cac chuoi giong nhau trong cung 1 nhan
+#    nr_isdr_seqs = list(set(nr_isdr_seqs))
+#    r_isdr_seqs = list(set(r_isdr_seqs)) 
     
     
     indexOfLabelDataDict = {"sustained_response":[], "non_response":[]} #luu index cua sequence tung loai
@@ -57,6 +57,7 @@ def combineAllLabeledData(r_isdr_seqs, nr_isdr_seqs):
     indexOfLabelDataDict["sustained_response"] = list(range(numOfResSeq))
     indexOfLabelDataDict["non_response"] = list(range(numOfResSeq, numOfResSeq+numOfNonResSeq))
     return seqList,indexOfLabelDataDict
+
 
 
 def removeSeqMultiLabel(nr_isdr_seqs, r_isdr_seqs):
