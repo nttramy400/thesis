@@ -150,7 +150,7 @@ def encode():
     #get feature
     sizeOfSubstr = range(2,41)
     seqList = h5filereader.getSeqListFromH5File()
-    listFeature = getListFeature(seqList,thresholdFreq=0.5*len(seqList), sizeOfSubstr= sizeOfSubstr)
+    listFeature = getListFeature(seqList,thresholdFreq=0.25*len(seqList), sizeOfSubstr= sizeOfSubstr)
     
     #build relational Matrix & save to H5 file
     buildRelationalMatrixToH5File(seqList,listFeature)
