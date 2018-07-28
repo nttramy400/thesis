@@ -17,7 +17,7 @@ def getListFeature(seqList, thresholdFreq=0, sizeOfSubstr = range(2,41)):
                     dictSubStrFrequency[subSeq] += 1
                 else:
                     dictSubStrFrequency[subSeq] = 1
-
+#    listFeature = sorted(dictSubStrFrequency, key=dictSubStrFrequency.get,reverse=True)[:int(len(dictSubStrFrequency)*0.25)]
     listFeature = filter(lambda key: dictSubStrFrequency[key] > thresholdFreq, dictSubStrFrequency) #lay cac subSeq co tan so xuat hien > thresholdFreq
     return listFeature
 
@@ -150,7 +150,9 @@ def encode():
     #get feature
     sizeOfSubstr = range(2,41)
     seqList = h5filereader.getSeqListFromH5File()
-    listFeature = getListFeature(seqList,thresholdFreq=0.25*len(seqList), sizeOfSubstr= sizeOfSubstr)
+    listFeature = getListFeature(seqList,thresholdFreq=0.5*len(seqList), sizeOfSubstr= sizeOfSubstr)
+    print('-----------------------------------------------------')
+    print (len(listFeature))
     
     #build relational Matrix & save to H5 file
     buildRelationalMatrixToH5File(seqList,listFeature)
@@ -168,6 +170,8 @@ def encode():
     #save info again
     replaceRelationalMatFromH5File(newFeatureRowMatrix)
     saveInfoFeatureToH5File(newListFeature,sizeOfSubstr)
+    print('+++++++++++++++++++++++++++++++++++++++++++++++=')
+    print (len(newListFeature))
     
 if __name__ == "__main__":
     encode()
