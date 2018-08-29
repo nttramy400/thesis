@@ -1,0 +1,1053 @@
+INFO:root:Number of neighbors in knn graph: 89
+INFO:root:####################
+INFO:root:Number of selected features: 1
+INFO:root:Accuracy: 47.335423
+INFO:root:####################
+INFO:root:Number of selected features: 2
+INFO:root:Accuracy: 47.335423
+INFO:root:####################
+INFO:root:Number of selected features: 3
+INFO:root:Accuracy: 47.021944
+INFO:root:####################
+INFO:root:Number of selected features: 4
+INFO:root:Accuracy: 47.021944
+INFO:root:####################
+INFO:root:Number of selected features: 5
+INFO:root:Accuracy: 47.021944
+INFO:root:####################
+INFO:root:Number of selected features: 6
+INFO:root:Accuracy: 48.902821
+INFO:root:####################
+INFO:root:Number of selected features: 7
+INFO:root:Accuracy: 48.902821
+INFO:root:####################
+INFO:root:Number of selected features: 8
+INFO:root:Accuracy: 48.902821
+INFO:root:####################
+INFO:root:Number of selected features: 9
+INFO:root:Accuracy: 51.410658
+INFO:root:####################
+INFO:root:Number of selected features: 10
+INFO:root:Accuracy: 51.097179
+INFO:root:####################
+INFO:root:Number of selected features: 11
+INFO:root:Accuracy: 52.037618
+INFO:root:####################
+INFO:root:Number of selected features: 12
+INFO:root:Accuracy: 54.858934
+INFO:root:####################
+INFO:root:Number of selected features: 13
+INFO:root:Accuracy: 55.172414
+INFO:root:####################
+INFO:root:Number of selected features: 14
+INFO:root:Accuracy: 90.595611
+INFO:root:####################
+INFO:root:Number of selected features: 15
+INFO:root:Accuracy: 56.739812
+INFO:root:####################
+INFO:root:Number of selected features: 16
+INFO:root:Accuracy: 89.341693
+INFO:root:####################
+INFO:root:Number of selected features: 17
+INFO:root:Accuracy: 54.545455
+INFO:root:####################
+INFO:root:Number of selected features: 18
+INFO:root:Accuracy: 54.545455
+INFO:root:####################
+INFO:root:Number of selected features: 19
+INFO:root:Accuracy: 54.545455
+INFO:root:####################
+INFO:root:Number of selected features: 20
+INFO:root:Accuracy: 54.545455
+INFO:root:####################
+INFO:root:Number of selected features: 21
+INFO:root:Accuracy: 54.545455
+INFO:root:####################
+INFO:root:Number of selected features: 22
+INFO:root:Accuracy: 53.605016
+INFO:root:####################
+INFO:root:Number of selected features: 23
+INFO:root:Accuracy: 57.366771
+INFO:root:####################
+INFO:root:Number of selected features: 24
+INFO:root:Accuracy: 57.053292
+INFO:root:####################
+INFO:root:Number of selected features: 25
+INFO:root:Accuracy: 57.680251
+INFO:root:####################
+INFO:root:Number of selected features: 26
+INFO:root:Accuracy: 57.993730
+INFO:root:####################
+INFO:root:Number of selected features: 27
+INFO:root:Accuracy: 56.112853
+INFO:root:####################
+INFO:root:Number of selected features: 28
+INFO:root:Accuracy: 58.620690
+INFO:root:####################
+INFO:root:Number of selected features: 29
+INFO:root:Accuracy: 57.680251
+INFO:root:####################
+INFO:root:Number of selected features: 30
+INFO:root:Accuracy: 59.247649
+INFO:root:####################
+INFO:root:Number of selected features: 31
+INFO:root:Accuracy: 57.053292
+INFO:root:####################
+INFO:root:Number of selected features: 32
+INFO:root:Accuracy: 57.366771
+INFO:root:####################
+INFO:root:Number of selected features: 33
+INFO:root:Accuracy: 89.028213
+INFO:root:####################
+INFO:root:Number of selected features: 34
+INFO:root:Accuracy: 88.401254
+INFO:root:####################
+INFO:root:Number of selected features: 35
+INFO:root:Accuracy: 88.401254
+INFO:root:####################
+INFO:root:Number of selected features: 36
+INFO:root:Accuracy: 57.680251
+INFO:root:####################
+INFO:root:Number of selected features: 37
+INFO:root:Accuracy: 89.028213
+INFO:root:####################
+INFO:root:Number of selected features: 38
+INFO:root:Accuracy: 88.401254
+INFO:root:####################
+INFO:root:Number of selected features: 39
+INFO:root:Accuracy: 88.401254
+INFO:root:####################
+INFO:root:Number of selected features: 40
+INFO:root:Accuracy: 87.460815
+INFO:root:####################
+INFO:root:Number of selected features: 41
+INFO:root:Accuracy: 90.282132
+INFO:root:####################
+INFO:root:Number of selected features: 42
+INFO:root:Accuracy: 88.714734
+INFO:root:####################
+INFO:root:Number of selected features: 43
+INFO:root:Accuracy: 90.595611
+INFO:root:####################
+INFO:root:Number of selected features: 44
+INFO:root:Accuracy: 89.655172
+INFO:root:####################
+INFO:root:Number of selected features: 45
+INFO:root:Accuracy: 89.341693
+INFO:root:####################
+INFO:root:Number of selected features: 46
+INFO:root:Accuracy: 89.341693
+INFO:root:####################
+INFO:root:Number of selected features: 47
+INFO:root:Accuracy: 89.341693
+INFO:root:####################
+INFO:root:Number of selected features: 48
+INFO:root:Accuracy: 89.655172
+INFO:root:####################
+INFO:root:Number of selected features: 49
+INFO:root:Accuracy: 67.711599
+INFO:root:####################
+INFO:root:Number of selected features: 50
+INFO:root:Accuracy: 59.247649
+INFO:root:####################
+INFO:root:Number of selected features: 51
+INFO:root:Accuracy: 79.937304
+INFO:root:####################
+INFO:root:Number of selected features: 52
+INFO:root:Accuracy: 88.087774
+INFO:root:####################
+INFO:root:Number of selected features: 53
+INFO:root:Accuracy: 88.714734
+INFO:root:####################
+INFO:root:Number of selected features: 54
+INFO:root:Accuracy: 88.714734
+INFO:root:####################
+INFO:root:Number of selected features: 55
+INFO:root:Accuracy: 88.401254
+INFO:root:####################
+INFO:root:Number of selected features: 56
+INFO:root:Accuracy: 89.655172
+INFO:root:####################
+INFO:root:Number of selected features: 57
+INFO:root:Accuracy: 86.206897
+INFO:root:####################
+INFO:root:Number of selected features: 58
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 59
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 60
+INFO:root:Accuracy: 86.206897
+INFO:root:####################
+INFO:root:Number of selected features: 61
+INFO:root:Accuracy: 51.724138
+INFO:root:####################
+INFO:root:Number of selected features: 62
+INFO:root:Accuracy: 90.282132
+INFO:root:####################
+INFO:root:Number of selected features: 63
+INFO:root:Accuracy: 90.909091
+INFO:root:####################
+INFO:root:Number of selected features: 64
+INFO:root:Accuracy: 90.909091
+INFO:root:####################
+INFO:root:Number of selected features: 65
+INFO:root:Accuracy: 89.028213
+INFO:root:####################
+INFO:root:Number of selected features: 66
+INFO:root:Accuracy: 51.724138
+INFO:root:####################
+INFO:root:Number of selected features: 67
+INFO:root:Accuracy: 51.724138
+INFO:root:####################
+INFO:root:Number of selected features: 68
+INFO:root:Accuracy: 89.968652
+INFO:root:####################
+INFO:root:Number of selected features: 69
+INFO:root:Accuracy: 88.714734
+INFO:root:####################
+INFO:root:Number of selected features: 70
+INFO:root:Accuracy: 89.655172
+INFO:root:####################
+INFO:root:Number of selected features: 71
+INFO:root:Accuracy: 90.282132
+INFO:root:####################
+INFO:root:Number of selected features: 72
+INFO:root:Accuracy: 88.714734
+INFO:root:####################
+INFO:root:Number of selected features: 73
+INFO:root:Accuracy: 89.028213
+INFO:root:####################
+INFO:root:Number of selected features: 74
+INFO:root:Accuracy: 89.968652
+INFO:root:####################
+INFO:root:Number of selected features: 75
+INFO:root:Accuracy: 89.028213
+INFO:root:####################
+INFO:root:Number of selected features: 76
+INFO:root:Accuracy: 51.097179
+INFO:root:####################
+INFO:root:Number of selected features: 77
+INFO:root:Accuracy: 88.714734
+INFO:root:####################
+INFO:root:Number of selected features: 78
+INFO:root:Accuracy: 89.341693
+INFO:root:####################
+INFO:root:Number of selected features: 79
+INFO:root:Accuracy: 89.968652
+INFO:root:####################
+INFO:root:Number of selected features: 80
+INFO:root:Accuracy: 88.714734
+INFO:root:####################
+INFO:root:Number of selected features: 81
+INFO:root:Accuracy: 89.341693
+INFO:root:####################
+INFO:root:Number of selected features: 82
+INFO:root:Accuracy: 89.968652
+INFO:root:####################
+INFO:root:Number of selected features: 83
+INFO:root:Accuracy: 89.655172
+INFO:root:####################
+INFO:root:Number of selected features: 84
+INFO:root:Accuracy: 89.655172
+INFO:root:####################
+INFO:root:Number of selected features: 85
+INFO:root:Accuracy: 51.410658
+INFO:root:####################
+INFO:root:Number of selected features: 86
+INFO:root:Accuracy: 52.351097
+INFO:root:####################
+INFO:root:Number of selected features: 87
+INFO:root:Accuracy: 52.037618
+INFO:root:####################
+INFO:root:Number of selected features: 88
+INFO:root:Accuracy: 51.724138
+INFO:root:####################
+INFO:root:Number of selected features: 89
+INFO:root:Accuracy: 87.147335
+INFO:root:####################
+INFO:root:Number of selected features: 90
+INFO:root:Accuracy: 52.978056
+INFO:root:####################
+INFO:root:Number of selected features: 91
+INFO:root:Accuracy: 55.485893
+INFO:root:####################
+INFO:root:Number of selected features: 92
+INFO:root:Accuracy: 84.326019
+INFO:root:####################
+INFO:root:Number of selected features: 93
+INFO:root:Accuracy: 53.605016
+INFO:root:####################
+INFO:root:Number of selected features: 94
+INFO:root:Accuracy: 50.470219
+INFO:root:####################
+INFO:root:Number of selected features: 95
+INFO:root:Accuracy: 89.968652
+INFO:root:####################
+INFO:root:Number of selected features: 96
+INFO:root:Accuracy: 51.410658
+INFO:root:####################
+INFO:root:Number of selected features: 97
+INFO:root:Accuracy: 53.291536
+INFO:root:####################
+INFO:root:Number of selected features: 98
+INFO:root:Accuracy: 86.206897
+INFO:root:####################
+INFO:root:Number of selected features: 99
+INFO:root:Accuracy: 89.341693
+INFO:root:####################
+INFO:root:Number of selected features: 100
+INFO:root:Accuracy: 84.639498
+INFO:root:####################
+INFO:root:Number of selected features: 101
+INFO:root:Accuracy: 87.147335
+INFO:root:####################
+INFO:root:Number of selected features: 102
+INFO:root:Accuracy: 56.739812
+INFO:root:####################
+INFO:root:Number of selected features: 103
+INFO:root:Accuracy: 57.366771
+INFO:root:####################
+INFO:root:Number of selected features: 104
+INFO:root:Accuracy: 56.112853
+INFO:root:####################
+INFO:root:Number of selected features: 105
+INFO:root:Accuracy: 90.909091
+INFO:root:####################
+INFO:root:Number of selected features: 106
+INFO:root:Accuracy: 62.695925
+INFO:root:####################
+INFO:root:Number of selected features: 107
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 108
+INFO:root:Accuracy: 84.012539
+INFO:root:####################
+INFO:root:Number of selected features: 109
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 110
+INFO:root:Accuracy: 86.833856
+INFO:root:####################
+INFO:root:Number of selected features: 111
+INFO:root:Accuracy: 52.664577
+INFO:root:####################
+INFO:root:Number of selected features: 112
+INFO:root:Accuracy: 52.351097
+INFO:root:####################
+INFO:root:Number of selected features: 113
+INFO:root:Accuracy: 50.783699
+INFO:root:####################
+INFO:root:Number of selected features: 114
+INFO:root:Accuracy: 85.579937
+INFO:root:####################
+INFO:root:Number of selected features: 115
+INFO:root:Accuracy: 86.833856
+INFO:root:####################
+INFO:root:Number of selected features: 116
+INFO:root:Accuracy: 52.351097
+INFO:root:####################
+INFO:root:Number of selected features: 117
+INFO:root:Accuracy: 87.774295
+INFO:root:####################
+INFO:root:Number of selected features: 118
+INFO:root:Accuracy: 85.579937
+INFO:root:####################
+INFO:root:Number of selected features: 119
+INFO:root:Accuracy: 52.037618
+INFO:root:####################
+INFO:root:Number of selected features: 120
+INFO:root:Accuracy: 84.639498
+INFO:root:####################
+INFO:root:Number of selected features: 121
+INFO:root:Accuracy: 84.952978
+INFO:root:####################
+INFO:root:Number of selected features: 122
+INFO:root:Accuracy: 88.087774
+INFO:root:####################
+INFO:root:Number of selected features: 123
+INFO:root:Accuracy: 51.410658
+INFO:root:####################
+INFO:root:Number of selected features: 124
+INFO:root:Accuracy: 52.351097
+INFO:root:####################
+INFO:root:Number of selected features: 125
+INFO:root:Accuracy: 84.326019
+INFO:root:####################
+INFO:root:Number of selected features: 126
+INFO:root:Accuracy: 84.326019
+INFO:root:####################
+INFO:root:Number of selected features: 127
+INFO:root:Accuracy: 87.147335
+INFO:root:####################
+INFO:root:Number of selected features: 128
+INFO:root:Accuracy: 88.714734
+INFO:root:####################
+INFO:root:Number of selected features: 129
+INFO:root:Accuracy: 90.282132
+INFO:root:####################
+INFO:root:Number of selected features: 130
+INFO:root:Accuracy: 87.774295
+INFO:root:####################
+INFO:root:Number of selected features: 131
+INFO:root:Accuracy: 85.893417
+INFO:root:####################
+INFO:root:Number of selected features: 132
+INFO:root:Accuracy: 56.426332
+INFO:root:####################
+INFO:root:Number of selected features: 133
+INFO:root:Accuracy: 52.978056
+INFO:root:####################
+INFO:root:Number of selected features: 134
+INFO:root:Accuracy: 53.605016
+INFO:root:####################
+INFO:root:Number of selected features: 135
+INFO:root:Accuracy: 85.266458
+INFO:root:####################
+INFO:root:Number of selected features: 136
+INFO:root:Accuracy: 87.147335
+INFO:root:####################
+INFO:root:Number of selected features: 137
+INFO:root:Accuracy: 51.410658
+INFO:root:####################
+INFO:root:Number of selected features: 138
+INFO:root:Accuracy: 86.206897
+INFO:root:####################
+INFO:root:Number of selected features: 139
+INFO:root:Accuracy: 87.460815
+INFO:root:####################
+INFO:root:Number of selected features: 140
+INFO:root:Accuracy: 86.206897
+INFO:root:####################
+INFO:root:Number of selected features: 141
+INFO:root:Accuracy: 88.714734
+INFO:root:####################
+INFO:root:Number of selected features: 142
+INFO:root:Accuracy: 52.351097
+INFO:root:####################
+INFO:root:Number of selected features: 143
+INFO:root:Accuracy: 86.206897
+INFO:root:####################
+INFO:root:Number of selected features: 144
+INFO:root:Accuracy: 87.774295
+INFO:root:####################
+INFO:root:Number of selected features: 145
+INFO:root:Accuracy: 87.774295
+INFO:root:####################
+INFO:root:Number of selected features: 146
+INFO:root:Accuracy: 87.147335
+INFO:root:####################
+INFO:root:Number of selected features: 147
+INFO:root:Accuracy: 88.087774
+INFO:root:####################
+INFO:root:Number of selected features: 148
+INFO:root:Accuracy: 54.231975
+INFO:root:####################
+INFO:root:Number of selected features: 149
+INFO:root:Accuracy: 53.605016
+INFO:root:####################
+INFO:root:Number of selected features: 150
+INFO:root:Accuracy: 54.231975
+INFO:root:####################
+INFO:root:Number of selected features: 151
+INFO:root:Accuracy: 88.087774
+INFO:root:####################
+INFO:root:Number of selected features: 152
+INFO:root:Accuracy: 54.231975
+INFO:root:####################
+INFO:root:Number of selected features: 153
+INFO:root:Accuracy: 88.401254
+INFO:root:####################
+INFO:root:Number of selected features: 154
+INFO:root:Accuracy: 88.714734
+INFO:root:####################
+INFO:root:Number of selected features: 155
+INFO:root:Accuracy: 51.410658
+INFO:root:####################
+INFO:root:Number of selected features: 156
+INFO:root:Accuracy: 86.833856
+INFO:root:####################
+INFO:root:Number of selected features: 157
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 158
+INFO:root:Accuracy: 87.147335
+INFO:root:####################
+INFO:root:Number of selected features: 159
+INFO:root:Accuracy: 85.579937
+INFO:root:####################
+INFO:root:Number of selected features: 160
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 161
+INFO:root:Accuracy: 86.206897
+INFO:root:####################
+INFO:root:Number of selected features: 162
+INFO:root:Accuracy: 52.978056
+INFO:root:####################
+INFO:root:Number of selected features: 163
+INFO:root:Accuracy: 53.605016
+INFO:root:####################
+INFO:root:Number of selected features: 164
+INFO:root:Accuracy: 85.579937
+INFO:root:####################
+INFO:root:Number of selected features: 165
+INFO:root:Accuracy: 85.266458
+INFO:root:####################
+INFO:root:Number of selected features: 166
+INFO:root:Accuracy: 52.978056
+INFO:root:####################
+INFO:root:Number of selected features: 167
+INFO:root:Accuracy: 52.037618
+INFO:root:####################
+INFO:root:Number of selected features: 168
+INFO:root:Accuracy: 85.579937
+INFO:root:####################
+INFO:root:Number of selected features: 169
+INFO:root:Accuracy: 87.147335
+INFO:root:####################
+INFO:root:Number of selected features: 170
+INFO:root:Accuracy: 87.460815
+INFO:root:####################
+INFO:root:Number of selected features: 171
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 172
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 173
+INFO:root:Accuracy: 52.978056
+INFO:root:####################
+INFO:root:Number of selected features: 174
+INFO:root:Accuracy: 53.291536
+INFO:root:####################
+INFO:root:Number of selected features: 175
+INFO:root:Accuracy: 83.385580
+INFO:root:####################
+INFO:root:Number of selected features: 176
+INFO:root:Accuracy: 54.231975
+INFO:root:####################
+INFO:root:Number of selected features: 177
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 178
+INFO:root:Accuracy: 53.605016
+INFO:root:####################
+INFO:root:Number of selected features: 179
+INFO:root:Accuracy: 52.037618
+INFO:root:####################
+INFO:root:Number of selected features: 180
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 181
+INFO:root:Accuracy: 87.147335
+INFO:root:####################
+INFO:root:Number of selected features: 182
+INFO:root:Accuracy: 87.460815
+INFO:root:####################
+INFO:root:Number of selected features: 183
+INFO:root:Accuracy: 84.952978
+INFO:root:####################
+INFO:root:Number of selected features: 184
+INFO:root:Accuracy: 51.097179
+INFO:root:####################
+INFO:root:Number of selected features: 185
+INFO:root:Accuracy: 86.833856
+INFO:root:####################
+INFO:root:Number of selected features: 186
+INFO:root:Accuracy: 51.724138
+INFO:root:####################
+INFO:root:Number of selected features: 187
+INFO:root:Accuracy: 52.978056
+INFO:root:####################
+INFO:root:Number of selected features: 188
+INFO:root:Accuracy: 86.833856
+INFO:root:####################
+INFO:root:Number of selected features: 189
+INFO:root:Accuracy: 52.978056
+INFO:root:####################
+INFO:root:Number of selected features: 190
+INFO:root:Accuracy: 52.037618
+INFO:root:####################
+INFO:root:Number of selected features: 191
+INFO:root:Accuracy: 87.147335
+INFO:root:####################
+INFO:root:Number of selected features: 192
+INFO:root:Accuracy: 85.266458
+INFO:root:####################
+INFO:root:Number of selected features: 193
+INFO:root:Accuracy: 51.410658
+INFO:root:####################
+INFO:root:Number of selected features: 194
+INFO:root:Accuracy: 86.833856
+INFO:root:####################
+INFO:root:Number of selected features: 195
+INFO:root:Accuracy: 85.266458
+INFO:root:####################
+INFO:root:Number of selected features: 196
+INFO:root:Accuracy: 85.893417
+INFO:root:####################
+INFO:root:Number of selected features: 197
+INFO:root:Accuracy: 53.605016
+INFO:root:####################
+INFO:root:Number of selected features: 198
+INFO:root:Accuracy: 86.833856
+INFO:root:####################
+INFO:root:Number of selected features: 199
+INFO:root:Accuracy: 52.037618
+INFO:root:####################
+INFO:root:Number of selected features: 200
+INFO:root:Accuracy: 86.206897
+INFO:root:####################
+INFO:root:Number of selected features: 201
+INFO:root:Accuracy: 86.206897
+INFO:root:####################
+INFO:root:Number of selected features: 202
+INFO:root:Accuracy: 86.206897
+INFO:root:####################
+INFO:root:Number of selected features: 203
+INFO:root:Accuracy: 52.037618
+INFO:root:####################
+INFO:root:Number of selected features: 204
+INFO:root:Accuracy: 87.460815
+INFO:root:####################
+INFO:root:Number of selected features: 205
+INFO:root:Accuracy: 85.266458
+INFO:root:####################
+INFO:root:Number of selected features: 206
+INFO:root:Accuracy: 53.605016
+INFO:root:####################
+INFO:root:Number of selected features: 207
+INFO:root:Accuracy: 53.605016
+INFO:root:####################
+INFO:root:Number of selected features: 208
+INFO:root:Accuracy: 87.147335
+INFO:root:####################
+INFO:root:Number of selected features: 209
+INFO:root:Accuracy: 53.605016
+INFO:root:####################
+INFO:root:Number of selected features: 210
+INFO:root:Accuracy: 87.147335
+
+INFO:root:Number of selected features: 211
+INFO:root:Accuracy: 51.097179
+INFO:root:####################
+INFO:root:Number of selected features: 212
+INFO:root:Accuracy: 87.147335
+INFO:root:####################
+INFO:root:Number of selected features: 213
+INFO:root:Accuracy: 87.147335
+INFO:root:####################
+INFO:root:Number of selected features: 214
+INFO:root:Accuracy: 87.147335
+INFO:root:####################
+INFO:root:Number of selected features: 215
+INFO:root:Accuracy: 53.291536
+INFO:root:####################
+INFO:root:Number of selected features: 216
+INFO:root:Accuracy: 53.291536
+INFO:root:####################
+INFO:root:Number of selected features: 217
+INFO:root:Accuracy: 87.147335
+INFO:root:####################
+INFO:root:Number of selected features: 218
+INFO:root:Accuracy: 87.147335
+INFO:root:####################
+INFO:root:Number of selected features: 219
+INFO:root:Accuracy: 76.489028
+INFO:root:####################
+INFO:root:Number of selected features: 220
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 221
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 222
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 223
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 224
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 225
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 226
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 227
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 228
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 229
+INFO:root:Accuracy: 86.206897
+INFO:root:####################
+INFO:root:Number of selected features: 230
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 231
+INFO:root:Accuracy: 53.291536
+INFO:root:####################
+INFO:root:Number of selected features: 232
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 233
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 234
+INFO:root:Accuracy: 86.206897
+INFO:root:####################
+INFO:root:Number of selected features: 235
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 236
+INFO:root:Accuracy: 53.291536
+INFO:root:####################
+INFO:root:Number of selected features: 237
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 238
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 239
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 240
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 241
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 242
+INFO:root:Accuracy: 86.206897
+INFO:root:####################
+INFO:root:Number of selected features: 243
+INFO:root:Accuracy: 86.206897
+INFO:root:####################
+INFO:root:Number of selected features: 244
+INFO:root:Accuracy: 86.206897
+INFO:root:####################
+INFO:root:Number of selected features: 245
+INFO:root:Accuracy: 53.291536
+INFO:root:####################
+INFO:root:Number of selected features: 246
+INFO:root:Accuracy: 53.291536
+INFO:root:####################
+INFO:root:Number of selected features: 247
+INFO:root:Accuracy: 87.147335
+INFO:root:####################
+INFO:root:Number of selected features: 248
+INFO:root:Accuracy: 53.291536
+INFO:root:####################
+INFO:root:Number of selected features: 249
+INFO:root:Accuracy: 53.291536
+INFO:root:####################
+INFO:root:Number of selected features: 250
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 251
+INFO:root:Accuracy: 86.833856
+INFO:root:####################
+INFO:root:Number of selected features: 252
+INFO:root:Accuracy: 53.291536
+INFO:root:####################
+INFO:root:Number of selected features: 253
+INFO:root:Accuracy: 86.520376
+INFO:root:####################
+INFO:root:Number of selected features: 254
+INFO:root:Accuracy: 53.918495
+INFO:root:####################
+INFO:root:Number of selected features: 255
+INFO:root:Accuracy: 58.934169
+INFO:root:####################
+INFO:root:Number of selected features: 256
+INFO:root:Accuracy: 59.874608
+INFO:root:####################
+INFO:root:Number of selected features: 257
+INFO:root:Accuracy: 53.918495
+INFO:root:####################
+INFO:root:Number of selected features: 258
+INFO:root:Accuracy: 59.561129
+INFO:root:####################
+INFO:root:Number of selected features: 259
+INFO:root:Accuracy: 53.918495
+INFO:root:####################
+INFO:root:Number of selected features: 260
+INFO:root:Accuracy: 78.369906
+INFO:root:####################
+INFO:root:Number of selected features: 261
+INFO:root:Accuracy: 43.887147
+INFO:root:####################
+INFO:root:Number of selected features: 262
+INFO:root:Accuracy: 67.398119
+INFO:root:####################
+INFO:root:Number of selected features: 263
+INFO:root:Accuracy: 54.858934
+INFO:root:####################
+INFO:root:Number of selected features: 264
+INFO:root:Accuracy: 59.561129
+INFO:root:####################
+INFO:root:Number of selected features: 265
+INFO:root:Accuracy: 59.874608
+INFO:root:####################
+INFO:root:Number of selected features: 266
+INFO:root:Accuracy: 59.561129
+INFO:root:####################
+INFO:root:Number of selected features: 267
+INFO:root:Accuracy: 67.084639
+INFO:root:####################
+INFO:root:Number of selected features: 268
+INFO:root:Accuracy: 67.084639
+INFO:root:####################
+INFO:root:Number of selected features: 269
+INFO:root:Accuracy: 54.231975
+INFO:root:####################
+INFO:root:Number of selected features: 270
+INFO:root:Accuracy: 63.949843
+INFO:root:####################
+INFO:root:Number of selected features: 271
+INFO:root:Accuracy: 63.322884
+INFO:root:####################
+INFO:root:Number of selected features: 272
+INFO:root:Accuracy: 76.489028
+INFO:root:####################
+INFO:root:Number of selected features: 273
+INFO:root:Accuracy: 67.398119
+INFO:root:####################
+INFO:root:Number of selected features: 274
+INFO:root:Accuracy: 62.695925
+INFO:root:####################
+INFO:root:Number of selected features: 275
+INFO:root:Accuracy: 59.561129
+INFO:root:####################
+INFO:root:Number of selected features: 276
+INFO:root:Accuracy: 63.949843
+INFO:root:####################
+INFO:root:Number of selected features: 277
+INFO:root:Accuracy: 56.739812
+INFO:root:####################
+INFO:root:Number of selected features: 278
+INFO:root:Accuracy: 63.636364
+INFO:root:####################
+INFO:root:Number of selected features: 279
+INFO:root:Accuracy: 53.918495
+INFO:root:####################
+INFO:root:Number of selected features: 280
+INFO:root:Accuracy: 52.978056
+INFO:root:Number of selected features: 281
+INFO:root:Accuracy: 54.231975
+INFO:root:####################
+INFO:root:Number of selected features: 282
+INFO:root:Accuracy: 66.771160
+INFO:root:####################
+INFO:root:Number of selected features: 283
+INFO:root:Accuracy: 64.576803
+INFO:root:####################
+INFO:root:Number of selected features: 284
+INFO:root:Accuracy: 67.084639
+INFO:root:####################
+INFO:root:Number of selected features: 285
+INFO:root:Accuracy: 53.918495
+INFO:root:####################
+INFO:root:Number of selected features: 286
+INFO:root:Accuracy: 64.576803
+INFO:root:####################
+INFO:root:Number of selected features: 287
+INFO:root:Accuracy: 68.338558
+INFO:root:####################
+INFO:root:Number of selected features: 288
+INFO:root:Accuracy: 55.485893
+INFO:root:####################
+INFO:root:Number of selected features: 289
+INFO:root:Accuracy: 69.278997
+INFO:root:####################
+INFO:root:Number of selected features: 290
+INFO:root:Accuracy: 66.457680
+INFO:root:####################
+INFO:root:Number of selected features: 291
+INFO:root:Accuracy: 68.338558
+INFO:root:####################
+INFO:root:Number of selected features: 292
+INFO:root:Accuracy: 77.115987
+INFO:root:####################
+INFO:root:Number of selected features: 293
+INFO:root:Accuracy: 64.576803
+INFO:root:####################
+INFO:root:Number of selected features: 294
+INFO:root:Accuracy: 68.025078
+INFO:root:####################
+INFO:root:Number of selected features: 295
+INFO:root:Accuracy: 64.576803
+INFO:root:####################
+INFO:root:Number of selected features: 296
+INFO:root:Accuracy: 73.354232
+INFO:root:####################
+INFO:root:Number of selected features: 297
+INFO:root:Accuracy: 65.517241
+INFO:root:####################
+INFO:root:Number of selected features: 298
+INFO:root:Accuracy: 64.890282
+INFO:root:####################
+INFO:root:Number of selected features: 299
+INFO:root:Accuracy: 54.545455
+INFO:root:####################
+INFO:root:Number of selected features: 300
+INFO:root:Accuracy: 49.843260
+INFO:root:####################
+INFO:root:Number of selected features: 301
+INFO:root:Accuracy: 49.843260
+INFO:root:####################
+INFO:root:Number of selected features: 302
+INFO:root:Accuracy: 54.231975
+INFO:root:####################
+INFO:root:Number of selected features: 303
+INFO:root:Accuracy: 55.799373
+INFO:root:####################
+INFO:root:Number of selected features: 304
+INFO:root:Accuracy: 68.652038
+INFO:root:####################
+INFO:root:Number of selected features: 305
+INFO:root:Accuracy: 70.219436
+INFO:root:####################
+INFO:root:Number of selected features: 306
+INFO:root:Accuracy: 59.247649
+INFO:root:####################
+INFO:root:Number of selected features: 307
+INFO:root:Accuracy: 67.398119
+INFO:root:####################
+INFO:root:Number of selected features: 308
+INFO:root:Accuracy: 56.426332
+INFO:root:####################
+INFO:root:Number of selected features: 309
+INFO:root:Accuracy: 51.724138
+INFO:root:####################
+INFO:root:Number of selected features: 310
+INFO:root:Accuracy: 55.172414
+INFO:root:####################
+INFO:root:Number of selected features: 311
+INFO:root:Accuracy: 55.172414
+INFO:root:####################
+INFO:root:Number of selected features: 312
+INFO:root:Accuracy: 54.231975
+INFO:root:####################
+INFO:root:Number of selected features: 313
+INFO:root:Accuracy: 56.426332
+INFO:root:####################
+INFO:root:Number of selected features: 314
+INFO:root:Accuracy: 47.962382
+INFO:root:####################
+INFO:root:Number of selected features: 315
+INFO:root:Accuracy: 35.109718
+INFO:root:####################
+INFO:root:Number of selected features: 316
+INFO:root:Accuracy: 49.843260
+INFO:root:####################
+INFO:root:Number of selected features: 317
+INFO:root:Accuracy: 58.620690
+INFO:root:####################
+INFO:root:Number of selected features: 318
+INFO:root:Accuracy: 63.636364
+INFO:root:####################
+INFO:root:Number of selected features: 319
+INFO:root:Accuracy: 39.184953
+INFO:root:####################
+INFO:root:Number of selected features: 320
+INFO:root:Accuracy: 59.561129
+INFO:root:####################
+INFO:root:Number of selected features: 321
+INFO:root:Accuracy: 59.247649
+INFO:root:####################
+INFO:root:Number of selected features: 322
+INFO:root:Accuracy: 36.677116
+INFO:root:####################
+INFO:root:Number of selected features: 323
+INFO:root:Accuracy: 60.188088
+INFO:root:####################
+INFO:root:Number of selected features: 324
+INFO:root:Accuracy: 53.291536
+INFO:root:####################
+INFO:root:Number of selected features: 325
+INFO:root:Accuracy: 59.874608
+INFO:root:####################
+INFO:root:Number of selected features: 326
+INFO:root:Accuracy: 54.231975
+INFO:root:####################
+INFO:root:Number of selected features: 327
+INFO:root:Accuracy: 50.470219
+INFO:root:####################
+INFO:root:Number of selected features: 328
+INFO:root:Accuracy: 58.934169
+INFO:root:####################
+INFO:root:Number of selected features: 329
+INFO:root:Accuracy: 62.068966
+INFO:root:####################
+INFO:root:Number of selected features: 330
+INFO:root:Accuracy: 50.470219
+INFO:root:####################
+INFO:root:Number of selected features: 331
+INFO:root:Accuracy: 54.858934
+INFO:root:####################
+INFO:root:Number of selected features: 332
+INFO:root:Accuracy: 57.053292
+INFO:root:####################
+INFO:root:Number of selected features: 333
+INFO:root:Accuracy: 51.097179
+INFO:root:####################
+INFO:root:Number of selected features: 334
+INFO:root:Accuracy: 55.799373
+INFO:root:####################
+INFO:root:Number of selected features: 335
+INFO:root:Accuracy: 50.783699
+INFO:root:####################
+INFO:root:Number of selected features: 336
+INFO:root:Accuracy: 62.068966
+INFO:root:####################
+INFO:root:Number of selected features: 337
+INFO:root:Accuracy: 52.037618
+INFO:root:####################
+INFO:root:Number of selected features: 338
+INFO:root:Accuracy: 53.605016
+INFO:root:####################
+INFO:root:Number of selected features: 339
+INFO:root:Accuracy: 57.366771
+INFO:root:####################
+INFO:root:Number of selected features: 340
+INFO:root:Accuracy: 52.978056
+INFO:root:####################
+INFO:root:Number of selected features: 341
+INFO:root:Accuracy: 41.692790
+INFO:root:####################
+INFO:root:Number of selected features: 342
+INFO:root:Accuracy: 61.442006
+INFO:root:####################
+INFO:root:Number of selected features: 343
+INFO:root:Accuracy: 49.843260
+INFO:root:####################
+INFO:root:Number of selected features: 344
+INFO:root:Accuracy: 51.724138
+INFO:root:####################
+INFO:root:Number of selected features: 345
+INFO:root:Accuracy: 50.783699
+INFO:root:####################
+INFO:root:Number of selected features: 346
+INFO:root:Accuracy: 52.037618
+INFO:root:####################
+INFO:root:Number of selected features: 347
+INFO:root:Accuracy: 63.009404
+INFO:root:####################
+INFO:root:Number of selected features: 348
+INFO:root:Accuracy: 47.962382
+INFO:root:####################
+INFO:root:Number of selected features: 349
+INFO:root:Accuracy: 60.188088
+INFO:root:####################
+INFO:root:Number of selected features: 350
+INFO:root:Accuracy: 55.799373
+INFO:root:####################
+INFO:root:Number of selected features: 351
+INFO:root:Accuracy: 41.692790

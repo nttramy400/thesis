@@ -1,0 +1,34 @@
+Knn_graph: k = 96
+Knn_classifier:k = 7
+numoffeature = 142
+leave one out: average accuracy = 88.53
+predict:
+   "non_response" : 1869
+   "sustained_response": 2293
+
+--------------------------------------------------------------------
+Knn_graph: k = 25
+Knn_classifier:k = 5
+numoffeature = 51
+leave one out: average accuracy = 91.397
+predict:
+   "non_response" : 2657
+   "sustained_response": 1505
+
+--------------------------------------------------------------------
+Knn_graph: k = 88
+Knn_classifier:k = 5
+numoffeature = 32
+leave one out: average accuracy = 91.756
+predict:
+   "non_response" : 3540
+   "sustained_response": 622
+
+--------------------------------------------------------------------
+Knn_graph: k = 129
+Knn_classifier:k = 9
+numoffeature = 142
+leave one out: average accuracy = 88.53
+predict:
+   "non_response" : 3629
+   "sustained_response": 533

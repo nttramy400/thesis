@@ -18,22 +18,24 @@ from datetime import datetime
 startTime = datetime.now()
 #clf = LinearSVC(penalty='l2', dual=False, C=50)
 logging.basicConfig(level=logging.DEBUG)
+from sklearn import tree
 #
+from sklearn.svm import SVC
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description='Laplacian score')
-    parser.add_argument('-nonsvr', help='non-svr isdr sequence files', dest='nr_isdr_files', action='append', required=True)
-    parser.add_argument('-svr', help='svr isdr sequence files', dest='r_isdr_files', action='append', required=True)
-    parser.add_argument('-nonlabel', help='non-labeled isdr sequence files', dest='nonlabel_isdr_files', action='append')
-    args = parser.parse_args()
-    nr_isdr_files = args.nr_isdr_files
-    r_isdr_files = args.r_isdr_files
-    nonlabel_isdr_files = args.nonlabel_isdr_files
+#    parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description='Laplacian score')
+#    parser.add_argument('-nonsvr', help='non-svr isdr sequence files', dest='nr_isdr_files', action='append', required=True)
+#    parser.add_argument('-svr', help='svr isdr sequence files', dest='r_isdr_files', action='append', required=True)
+#    parser.add_argument('-nonlabel', help='non-labeled isdr sequence files', dest='nonlabel_isdr_files', action='append')
+#    args = parser.parse_args()
+#    nr_isdr_files = args.nr_isdr_files
+#    r_isdr_files = args.r_isdr_files
+#    nonlabel_isdr_files = args.nonlabel_isdr_files
     
-#    nr_isdr_files = ["./input2/nr_isdr.txt"]
-#    r_isdr_files = ["./input2/r_isdr.txt"]
-#    nonlabel_isdr_files = ["./input2/non_labeled_isdr.txt"]
+    nr_isdr_files = ["./input2/nr_isdr.txt"]
+    r_isdr_files = ["./input2/r_isdr.txt"]
+    nonlabel_isdr_files = ["./input2/non_labeled_isdr.txt"]
 
     
     logging.info("------------------GET ISDR SEQUENCES FROM FILE------------------")
@@ -41,7 +43,11 @@ if __name__ == '__main__':
     
     logging.info("------------------ENCODING------------------")
     encode_4.encode()
-#    
+    
+    logging.info("ENCODING")
+    logging.info(datetime.now() - startTime)
+    startTime = datetime.now()
+    
     logging.info("------------------CALCULATE LAPLACIAN SCORE------------------")
     sizeOfSeqList = len(h5filereader.getSeqListFromH5File())
     k_knn_graph = sizeOfSeqList/50
@@ -61,7 +67,7 @@ if __name__ == '__main__':
     logging.info("Classifier: KNN")
     logging.info("Cross-validation: leave-one-out")
     loo = LeaveOneOut()
-#    kf = KFold(n_splits=5)
+#    kf = KFold(n_splits=5, shuffle=True)
     for k_KNN_feature_selection in range(k_knn_graph,k_knn_graph + 1): #k neightbor seq in knn graph
         print k_KNN_feature_selection
         logging.info("Number of neighbors in knn graph: %d", k_KNN_feature_selection)
@@ -94,8 +100,9 @@ if __name__ == '__main__':
                 labelPredict = neigh.predict(X_test)     
                 tmpAccuracyScoreList.append(accuracy_score(y_test,labelPredict))
                 
+#                #63.44 cosine
 #                #SVC
-#                clf = LinearSVC(penalty='l2', dual=False, C=50)                       
+#                clf = tree.DecisionTreeClassifier()                       
 #                clf.fit(X_train, y_train)
 #                labelPredict = clf.predict(X_test)     
 #                tmpAccuracyScoreList.append(accuracy_score(y_test,labelPredict))
@@ -108,15 +115,15 @@ if __name__ == '__main__':
     sortAcc = [{"numOfFeatures": i[0]+1,"Accuracy": i[1]} for i in sorted(enumerate(sumarizeAccuracy),reverse=True, key=lambda x:x[1])]
     
     print "\n------------------------------FINAL RESULT------------------------------------"
-    print 'TOP 1 ACCURACY'
-    for item in sortAcc[:1]:
+    print 'TOP 10 ACCURACY'
+    for item in sortAcc[:10]:
         print item
-        numOfFeature = item["numOfFeatures"]
-        
-        listIndexes = sortedLaplaFeatureIndexes[:numOfFeature]
-        print listIndexes
-        print h5filereader.readFeatureListFromFile()[listIndexes]
-        
+#        numOfFeature = item["numOfFeatures"]
+#        
+#        listIndexes = sortedLaplaFeatureIndexes[:numOfFeature]
+#        print listIndexes
+#        print h5filereader.readFeatureListFromFile()[listIndexes]
+#        
     plt.plot(kFeatures, sumarizeAccuracy, "k-o")#, label="Laplacian score - KNN") #"g-o"
     plt.ylabel(u'Độ chính xác (%)')
     plt.xlabel(u'Số lượng thuộc tính được chọn')
@@ -126,7 +133,7 @@ if __name__ == '__main__':
     plt.legend()
     plt.show()
         
-    
+    logging.info("ALL PROCESS")
     logging.info(datetime.now() - startTime)
 
 

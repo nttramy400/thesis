@@ -2,6 +2,7 @@ import numpy as np
 import h5filereader
 from scipy.spatial.distance import cosine
 from sklearn.neighbors import NearestNeighbors
+from sklearn.neighbors import kneighbors_graph
 import logging
     
 ############################ DISTANCE MEASURE ############################
@@ -41,7 +42,7 @@ def getWeight(isclose=None, seqVec1=None, seqVec2=None, isLabeled=False):
 #    sortedIndexList = np.delete(sortedIndexList, indexOfCurSeq)
 #    return sortedIndexList[:kNumOfNeighbors]
     
-
+#-----------------------------------
 def buildWeightMat(seqRowMat, labelVec, kNumOfNeighbors):
     logging.info("Build weight matrix")
     numOfSeq = len(seqRowMat)
@@ -74,6 +75,21 @@ def buildWeightMat(seqRowMat, labelVec, kNumOfNeighbors):
                 = getWeight(isclose=True,seqVec1=seqRowMat[neighborIndex],seqVec2=seqRowMat[indexUnlabeledData])
     
     return weightMat
+
+#def buildWeightMat(seqRowMat, labelVec, kNumOfNeighbors):
+#    logging.info("Build weight matrix")
+#    weightMat = kneighbors_graph(seqRowMat, kNumOfNeighbors, mode='distance', include_self=True, n_jobs=-1).toarray()
+#    
+#    numOfLabelSeq = len(labelVec)
+#
+#    ######## cho cac labeled data ########
+#    # danh weight cho seq cung label    
+#    for index1 in range(numOfLabelSeq):
+#        for index2 in range(index1, numOfLabelSeq):
+#            if labelVec[index1] == labelVec[index2]: 
+#                weightMat[index1][index2] = weightMat[index2][index1]= 1
+#                     
+#    return weightMat
 
 
 
